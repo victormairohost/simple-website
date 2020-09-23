@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="footerstyle.css">
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
+
+<img src="text.jpg" style="background-position: bottom;">
+<!-- Text Color -->
+
+<!-- <h1>What Can JavaScript Do?</h1>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+Click Me!</button> -->
+<br>
+<br>
+
+<button type="button" onclick="document.getElementById('dammy').innerHTML = 'Hello word'">Click me</button>
+<p id="dammy"></p>
+
+
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+<button type="button" onclick="execute()">Click Me!</button>
+<p id="color">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function execute() {
+    var x = document.getElementById("color");
+    x.style.fontSize = "25px";           
+    x.style.color = "red"; 
+}
+</script>
+
+
+
+
+<br>
+<br>
+<br>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="input"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+
+    document.getElementById("input").innerHTML = text;
+}
+</script>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+<br>
+<br>
+
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+<img id="myImage" onclick="changeImage()" src="birdoff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("birdon")) {
+        image.src = "pic_birdoff.gif";
+    } else {
+        image.src = "pic_birdon.gif";
+    }
+}
+</script>
+
+
+
+
+<script>
+window.alert(Name: victor, Email: victormairo@ymail.com);
+</script>
+
+
+<h1><font color="blue">my name</font></h1>
+
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+
+<!-- font-family -->
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+<p>This is a font family.</p>
+
+<!-- Text Size -->
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+
+<!-- text-align -->
+<h1 style="text-align:center;">Centered Heading</h1>
+<p>This is a paragraph.</p>
+
+
+
+
+<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>M-DEV<span>WEB CLASS</span></h3>
+ 
+		<p class="footer-links">
+		<a href="#">Home</a>
+	·
+		<a href="#">Blog</a>
+	·
+		<a href="#">Pricing</a>
+	·
+		<a href="#">About</a>
+	·
+		<a href="#">Faq</a>
+	·
+		<a href="#">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">M-DEV WEB CLASS &copy; 2020</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>Akili ozizor</span>ogbaru, onitsha</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>08116111355</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:support@company.com">contact@M-devwebclass.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>About the company</span>
+	M-dev builds great web designers &amp; web developers.
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-github"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+ 
+
+
+
+
+
+</body>
+</html>
